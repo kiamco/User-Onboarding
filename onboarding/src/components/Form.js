@@ -6,16 +6,8 @@ const CreateForm = (props) => {
         <div className='form-container'>
             <Formik>
                 <Form>
-                    <Field 
-                        component='input' 
-                        type='text' 
-                        name='name' 
-                        placeholder='Name'/>
-                    <Field 
-                        component='input' 
-                        type='text' 
-                        name='email' 
-                        placeholder='Email'/>
+                    <Field component='input' type='text' name='name' placeholder='Name'/>
+                    <Field component='input' type='text' name='email' placeholder='Email'/>
                     <Field
                         component='input'
                         type='password'
@@ -23,6 +15,7 @@ const CreateForm = (props) => {
                         placeholder='Password'/>
                     <div className='checkbox'>
                         <Field type='checkbox' name='Terms' placeholder='Name' checked={false}/>
+                        <p>Agree with terms and conditions</p>
                     </div>
                     <button>Submit</button>
                 </Form>
